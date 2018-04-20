@@ -1,0 +1,45 @@
+html {
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+mark {
+  background-color: black;
+  color: white;
+  padding: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  height: calc(100% - 40px);
+  justify-content: center;
+  transform: translateY(-20px);
+  padding: 20px;
+}
+
+.hey-msg {
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.bye-msg {
+  align-self: flex-end;
+}
+
+.lousy-msg {
+  margin: 40px 0 20px;
+  line-height: 25px;
+}

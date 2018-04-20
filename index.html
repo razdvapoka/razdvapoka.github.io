@@ -1,23 +1,33 @@
----
-layout: default
----
+<!doctype html>
 
-<div class="home">
+<html lang="en">
 
-  <h1 class="page-heading">Posts</h1>
+<head>
+  <meta charset="utf-8">
+  <title>...</title>
+  <meta name="description" content="WIP">
+  <meta name="author" content="razdvapoka">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
+  <div class="content">
+    <h1 class="hey-msg">hey!</h1> 
+    <p class="lousy-msg">
+      this page is still work in progress<br/>
+      work that I haven't even started yet tbh...<br/>
+      but there is no need to be disappointed!<br/>
+      come back some day<br/>
+      you may find smth<br/>
+      <mark>beautiful</mark> or <mark>ugly</mark> here<br/>
+      or <mark>nothing</mark> at all<br/>
+      <br/>
+    </p>
+    <h1 class="hey-msg bye-msg">bye!</h1>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
